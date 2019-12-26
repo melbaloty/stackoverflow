@@ -26,6 +26,7 @@ public class UserController {
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public User login(@RequestParam("username") String username, @RequestParam("password") String password) {
 
+		System.out.println("login==============");
 		return userService.login(username, password);
 	}
 
